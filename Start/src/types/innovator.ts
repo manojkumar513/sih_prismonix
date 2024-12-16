@@ -1,0 +1,170 @@
+export type InnovatorRole =
+  | 'Student'
+  | 'Entrepreneur'
+  | 'Researcher'
+  | 'Innovator'
+  | 'Industry Professional'
+  | 'Freelancer'
+  | 'Investor'
+  | 'Mentor/Advisor'
+  | 'Co-Founder'
+  | 'Engineer/Developer'
+  | 'Designer'
+  | 'Consultant';
+
+export type InnovatorSkill =
+  | 'Idea Generation'
+  | 'Prototyping'
+  | 'Design Thinking'
+  | 'Market Research'
+  | 'Business Development'
+  | 'Strategic Planning'
+  | 'Product Design'
+  | 'Pitch Deck Creation'
+  | 'Fundraising'
+  | 'Entrepreneurship'
+  | 'Problem Solving'
+  | 'Innovation Management'
+  | 'Team Building'
+  | 'Risk Analysis'
+  | 'Customer Validation'
+  | 'Growth Hacking'
+  | 'Marketing Strategy'
+  | 'Technology Integration'
+  | 'Creative Thinking'
+  | 'User Research'
+  | 'Feasibility Analysis'
+  | 'Leadership'
+  | 'Time Management'
+  | 'Visionary Thinking'
+  | 'Other';
+
+export type IndustryFocus =
+  | 'Agriculture'
+  | 'AI&MachineLearning'
+  | 'Automation&Robotics'
+  | 'Biotechnology'
+  | 'CleanEnergy&Environment'
+  | 'Construction&RealEstate'
+  | 'ConsumerGoods&Services'
+  | 'Cybersecurity'
+  | 'E-Commerce'
+  | 'EdTech'
+  | 'Finance&FinTech'
+  | 'Gaming&Entertainment'
+  | 'Healthcare&MedTech'
+  | 'Hospitality&Tourism'
+  | 'IoT&SmartDevices'
+  | 'LegalTech'
+  | 'Manufacturing'
+  | 'Media&Communication'
+  | 'Pharmaceuticals'
+  | 'RenewableEnergy'
+  | 'Retail&FMCG'
+  | 'SaaS&CloudComputing'
+  | 'SocialImpact'
+  | 'SpaceTech'
+  | 'Sports&Fitness'
+  | 'Sustainability'
+  | 'Transportation&Logistics'
+  | 'WearableTechnology';
+
+export type AreaOfExpertise =
+  | 'Product Design'
+  | 'Business Strategy'
+  | 'Project Management'
+  | 'Software Development'
+  | 'Hardware Engineering'
+  | 'UI/UX Design'
+  | 'Data Science & AI'
+  | 'Machine Learning'
+  | 'Blockchain Development'
+  | 'Cybersecurity'
+  | 'Marketing & Sales'
+  | 'Finance & Investment'
+  | 'Legal & Compliance'
+  | 'Sustainability'
+  | 'Healthcare Innovation'
+  | 'Renewable Energy'
+  | 'Supply Chain & Logistics'
+  | 'Education Technology'
+  | 'Creative Writing & Content Creation'
+  | 'Research & Development'
+  | 'Human Resources & Talent Management'
+  | 'Manufacturing & Production'
+  | 'Legal & IP Management'
+  | 'Networking & Telecommunications'
+  | 'Social Impact & Nonprofits';
+
+export type InnovationCategory =
+  | 'Technology'
+  | 'Healthcare'
+  | 'Education'
+  | 'Environment'
+  | 'Social Impact'
+  | 'Finance'
+  | 'Sustainability'
+  | 'Energy'
+  | 'Agriculture'
+  | 'Transportation'
+  | 'Manufacturing'
+  | 'Consumer Goods'
+  | 'Retail'
+  | 'AI & Robotics'
+  | 'Blockchain'
+  | 'Cybersecurity'
+  | 'Digital Media'
+  | 'Entertainment'
+  | 'Tourism'
+  | 'Real Estate'
+  | 'Urban Development'
+  | 'Smart Cities'
+  | 'Space & Aerospace'
+  | 'Food Security'
+  | 'Water Management'
+  | 'Public Policy'
+  | 'Nonprofit Initiatives';
+
+export type CollaborationType =
+  | 'Technical Support'
+  | 'Investment'
+  | 'Co-Founder Search'
+  | 'Idea Validation'
+  | 'Mentorship'
+  | 'Team Building'
+  | 'Networking'
+  | 'Market Research'
+  | 'Partnership Opportunities'
+  | 'Product Development'
+  | 'Funding'
+  | 'Marketing & Outreach'
+  | 'Collaborative Research'
+  | 'Sales & Distribution';
+
+export type LookingFor =
+  | 'Mentorship'
+  | 'Funding'
+  | 'Team Building'
+  | 'Networking'
+  | 'Collaboration'
+  | 'Investment'
+  | 'Partnership Opportunities'
+  | 'Sales & Distribution'
+  | 'Market Research'
+  | 'Product Development'
+  | 'Technical Support'
+  | 'Idea Validation'
+  | 'Resource Sharing';
+
+export interface InnovatorProfile {
+  address: string;
+  education: string;
+  currentRole: InnovatorRole;
+  skills: InnovatorSkill[];
+  industryFocus: IndustryFocus[];
+  areaOfExpertise: AreaOfExpertise[];
+  innovationCategory: InnovationCategory[];
+  collaborationType: CollaborationType[];
+  lookingFor: LookingFor[];
+  portfolioUrl?: string;
+}
